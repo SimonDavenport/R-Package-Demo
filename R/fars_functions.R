@@ -15,6 +15,7 @@
 #' extracted form the file
 #'
 #' @examples
+#' print(getwd())
 #' fars_read(file.path("data-raw", "accident_2013.csv.bz2"))
 #'
 fars_read <- function(filename) {
