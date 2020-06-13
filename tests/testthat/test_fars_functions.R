@@ -2,7 +2,7 @@
 
 
 test_that("FARS data read successful", {
-  expect_error(fars_read(file.path(normalizePath('../../'), 'data-raw', make_filename(2013))), NA)
+  expect_error(fars_read(file.path(normalizePath('../../'), make_filename(2013))), NA)
 })
 
 test_that("Read years successful", {
