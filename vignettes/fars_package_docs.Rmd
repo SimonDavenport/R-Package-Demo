@@ -1,0 +1,61 @@
+---
+title: "FARS package"
+author: "Simon Davenport"
+date: "2020-06-03"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{FARS package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This package was generated an example of an R package for a "Building R packages" 
+course.
+
+FARS is a nationwide census providing NHTSA, Congress and the American public 
+yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+
+The FARS package wraps the FARS dataset for the years 2013-2015 and provides some
+basic functionality to generate geographical maps plotting the locations of 
+accidents per year and US state.
+
+Below is a brief summary of amount of available functionality of the package, 
+first a summary of all available datasets, followed by an example of how to make 
+a plot
+
+```{r setup}
+library(FarsPackage)
+```
+
+2013 Dataset
+
+```{r} 
+fars_summarize_years(list(2013))
+```
+
+2014 Dataset
+
+```{r} 
+fars_summarize_years(list(2013))
+```
+
+2015 Dataset
+
+```{r} 
+fars_summarize_years(list(2013))
+```
+
+Plot example, showing accident data for 2014 for Alabama (the 1st state alphabetically)
+
+```{r} 
+fars_map_state(1, 2014)
+```
+
+
