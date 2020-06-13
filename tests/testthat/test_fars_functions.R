@@ -1,10 +1,6 @@
 ## Test package functionality
 
 
-test_that("FARS data read successful", {
-  expect_error(fars_read(file.path(normalizePath('../../'), make_filename(2013))), NA)
-})
-
 test_that("Read years successful", {
   expect_warning(fars_read_years(list(2013)), NA)
   expect_equal(nrow(fars_read_years(list(2013))[[1]]), 30202)
