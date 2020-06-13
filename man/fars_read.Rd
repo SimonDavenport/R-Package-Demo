@@ -17,7 +17,3 @@ extracted form the file
 Attempt to import data from a csv file
 with the given file name. Raises exception if file does not exist
 }
-\examples{
-fars_read(file.path("data-raw", "accident_2013.csv.bz2"))
-
-}
