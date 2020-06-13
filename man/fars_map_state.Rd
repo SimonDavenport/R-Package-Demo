@@ -12,7 +12,7 @@ state (or district) to be plotted. An error message is raised if an invalid
 state index is specified.}
 
 \item{year}{integer, or convertible to integer containing the year for which
-to plot the accident dataset. A warning message is created if there are no
+to plot the accident dataset. An error message is created if there are no
 data available for that year}
 }
 \value{
