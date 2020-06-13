@@ -15,7 +15,7 @@
 #' extracted form the file
 #'
 #' @examples
-#' fars_read("accident_2013.csv.bz2")
+#' fars_read("data-raw/accident_2013.csv.bz2")
 #'
 fars_read <- function(filename) {
   if(!file.exists(filename))
@@ -43,7 +43,7 @@ fars_read <- function(filename) {
 #'
 make_filename <- function(year) {
   year <- as.integer(year)
-  sprintf("accident_%d.csv.bz2", year)
+  sprintf("data-raw/accident_%d.csv.bz2", year)
 }
 
 
